@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' https://cdn.jsdelivr.net;">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="../popup/bulma.min.css">
+    <script type="module" src="../api/api.js"></script> <!-- Підключаємо API -->
+    <style>
+        body {
+            padding: 2rem;
+        }
+    
+        .section-title {
+            margin-bottom: 2rem;
+            padding: 1rem;
+            background-color: #f5f5f5;
+            border-left: 5px solid #00d1b2;
+            font-size: 1.5rem;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    
+        ul {
+            list-style-type: disc;
+            margin-left: 2rem;
+            margin-top: 1rem;
+        }
+    
+        /* ОНОВЛЕНІ СТИЛІ ТАБЛИЦЬ */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+    
+        th,
+        td {
+            padding: 12px 16px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+            font-size: 14px;
+        }
+    
+        th {
+            background-color: #007bff;
+            color: white;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+    
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+    
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+    
+        td.negative-change {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="section-title" id="fuelPricesTitle">Fuel Prices</div>
+        <div id="fuelPricesList"></div> <!-- тут з'явиться список -->
+
+        <div class="section-title" id="fuelOperatorsTitle">Fuel Operators</div>
+        <div id="fuelOperatorsList"></div> <!-- тут буде таблиця -->
+    </div>
+    
+    
+    
+</body>
+
+</html>
